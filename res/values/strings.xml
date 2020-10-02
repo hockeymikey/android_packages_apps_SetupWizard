@@ -46,6 +46,7 @@
 
     <string name="intro_restore_button">Restore from backup</string>
     <string name="intro_restore_title">Restore apps and data</string>
+    <string name="intro_restore_subtitle">If you have a backup from your last phone, you can restore it here.</string>
 
     <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
     <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
