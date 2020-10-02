@@ -47,6 +47,7 @@
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.ESIM_INTRO;end" id="esim_intro" />
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CARRIER_SETUP;end" id="carrier_setup" />
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.SIM_SETUP;end" id="sim_setup" />
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.RESTORE_BACKUP;end" id="restore">
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.DEVICE_OWNER_WARNING;end" id="device_owner_warning">
         <result wizard:resultCode="1" wizard:action="check_frp" wizard:name="skip" />
     </WizardAction>
