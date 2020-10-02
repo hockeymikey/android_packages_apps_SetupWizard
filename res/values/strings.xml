@@ -45,6 +45,7 @@
     <string name="setup_current_time">Current time</string>
 
     <string name="intro_restore_button">Restore from backup</string>
+    <string name="intro_restore_title">Restore apps and data</string>
 
     <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
     <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
