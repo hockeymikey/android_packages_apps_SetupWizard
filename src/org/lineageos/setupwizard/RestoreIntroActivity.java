@@ -1,7 +1,6 @@
 package org.lineageos.setupwizard;
 
 import android.content.Intent;
-import com.android.internal.R;
 
 public class RestoreIntroActivity extends SubBaseActivity {
 
