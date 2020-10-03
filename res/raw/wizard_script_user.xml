@@ -42,6 +42,7 @@
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.WIFI_SETTINGS;end" id="wifi_settings">
         <result wizard:resultCode="1" wizard:action="no_account_flow" wizard:name="skip" />
     </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.RESTORE_BACKUP;end" id="restore" />
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CAPTIVE_PORTAL;end" id="captive_portal" />
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.GMS_CHECKIN;end" id="gms_checkin" />
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.LOAD_ADD_ACCOUNT_INTENT;end" id="load_account_intent" />

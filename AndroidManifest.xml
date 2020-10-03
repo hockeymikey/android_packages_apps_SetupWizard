@@ -250,7 +250,7 @@
                   android:immersive="true"
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
-            <intent-filter>
+            <intent-filter>Mike McFeely
                 <action android:name="org.lineageos.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
