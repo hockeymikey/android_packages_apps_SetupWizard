@@ -256,7 +256,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".backup.RestoreIntroActivity"
+        <activity android:name=".RestoreIntroActivity"
             android:label="@string/activity_label_empty"
             android:excludeFromRecents="true"
             android:configChanges="mcc|mnc"
