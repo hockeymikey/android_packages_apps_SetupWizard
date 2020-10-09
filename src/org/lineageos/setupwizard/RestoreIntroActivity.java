@@ -6,6 +6,31 @@ import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_RESTORE;
 
 public class RestoreIntroActivity extends SubBaseActivity {
 
+    Bundle extras;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        if (LOGV) {
+            Log.d(TAG, "onCreate savedInstanceState=" + savedInstanceState);
+        }
+        super.onCreate(savedInstanceState);
+        setNextText(R.string.skip);
+
+        if (savedInstanceState == null) {
+            onStartSubactivity();
+        }
+        //getIntent().getStringExtra("id");
+
+        extras = getIntent().getExtras();
+        if (extras != null) {
+            Log.v(TAG, "Restore activity =" + );
+
+            for (String key: extras.keySet()) {
+                Log.e("RestoreActivity: ", key + " => " + extras.get(key) );
+            }
+        }
+    }
+
     @Override
     protected void onStartSubactivity() {
         setNextAllowed(true);
@@ -31,6 +56,13 @@ public class RestoreIntroActivity extends SubBaseActivity {
     @Override
     protected int getSubactivityNextTransition() {
         return TRANSITION_ID_SLIDE;
+    }
+
+    @Override
+    public void onNavigateNext() {
+        nextAction(ResultCodes.RESULT_SKIP);
+
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 
     private void launchRestore() {
