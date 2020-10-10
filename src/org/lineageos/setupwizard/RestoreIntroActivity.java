@@ -1,8 +1,10 @@
 package org.lineageos.setupwizard;
 
 import android.content.Intent;
+import android.os.Bundle;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_RESTORE_FROM_BACKUP;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_RESTORE;
+import static com.android.setupwizardlib.util.ResultCodes.RESULT_SKIP;
 
 public class RestoreIntroActivity extends SubBaseActivity {
 
@@ -23,7 +25,7 @@ public class RestoreIntroActivity extends SubBaseActivity {
 
         extras = getIntent().getExtras();
         if (extras != null) {
-            Log.v(TAG, "Restore activity =" + );
+            Log.v(TAG, "Restore activity:");
 
             for (String key: extras.keySet()) {
                 Log.e("RestoreActivity: ", key + " => " + extras.get(key) );
@@ -61,8 +63,6 @@ public class RestoreIntroActivity extends SubBaseActivity {
     @Override
     public void onNavigateNext() {
         nextAction(ResultCodes.RESULT_SKIP);
-
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 
     private void launchRestore() {

@@ -37,7 +37,7 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
         mRootView = findViewById(R.id.root);
         setNextText(R.string.next);
         //setBackText(R.string.emergency_call);
-        setBackText("Exit");
+        setBackText(R.string.exit);
         setBackDrawable(null);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
