@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_RESTORE_FROM_BACKUP;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_RESTORE;
-import static com.android.setupwizardlib.util.ResultCodes.RESULT_SKIP;
+import static com.android.setupwizardlib.util.ResultCodes;
+import android.util.Log;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 public class RestoreIntroActivity extends SubBaseActivity {
 
