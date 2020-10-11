@@ -484,7 +484,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         return false;
     }
 
-    private void startSetupWizardExitActivity() {
+    protected void startSetupWizardExitActivity() {
         if (LOGV) {
             Log.v(TAG, "startSetupWizardExitActivity()");
         }
